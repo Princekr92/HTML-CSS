@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment option</title>
+    <style>
+        .container{
+            width: 100vw;
+            height: 100vh;
+            background-color: #8EC5FC;
+            background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .card{
+            width: 350px;
+            height: 550px;
+            border-radius: 20px;
+            background-color: white;
+            gap: 20px;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .card img{
+            width: 350px;
+            height: 150px;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+        }
+        .card p{
+            text-align: center;
+            font-size: 18px;
+        }
+        #amountBox{
+            width: 80%;
+            height: 10%;
+            background-color: royalblue;
+            border-radius: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-left: 20px;
+            padding-right: 20px;
+
+        }
+        #leftBox{
+           height: 100%;
+           display: flex;
+           gap: 15px;
+           align-items: center;
+        }
+         
+        #paymentBotton{
+            width: 80%;
+            height: 10%;
+            background-color: rgb(22, 22, 79);
+            border-radius: 10px;
+            color: white;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19),0 6px 6px rgba(0, 0, 0, 0.23);
+        }
+        .cancelBox {
+             
+            color: aliceblue;
+            text-decoration: none;
+            font-weight: bold;
+            
+        }
+        #textAmount p{
+            font-size: 20px;
+        }
+        .imgBox img{
+            height: 30px;
+            width: 30px;
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+        <img src="techimg.jpg" alt="image">
+        <h2>Order Summary</h2>
+        <p> The application of scientific knowledge to the practical aims of human life. </p>
+        <div id="amountBox">
+            <div id="leftBox">
+                <div class="imgBox">
+                  <img src="mgimg.png" >
+                </div>
+                <div id="textAmount">
+                    <p>Amount</p>
+                    <p>$99.9/year</p>
+                </div>
+            </div>
+            <div id="rightBox">
+                 <a href="#">Change</a>
+
+            </div>
+        </div>
+        <button id="paymentBotton">Proceed to Payment</button>
+        <div class="cancelBox">
+            <a href="#">Cancel Order</a>
+        </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Box Shadow create learn</title>
+    <style>
+        .container{
+            background-color: beige;
+            border: 3px solid red;
+            height: 550px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+        .box{
+            background-color: yellowgreen;
+            border: 3px solid yellow;
+            margin: 2px;
+            padding: 2px;
+            height: 430px;
+            width: 330px;
+            /* box-shadow: 10px 10px black; */
+            /* box-shadow: 10px 10px 6px black; */
+            /* box-shadow: 10px 10px 5px 40px; */
+            /* box-shadow: inset 10px 15px red; */
+            box-shadow: 10px 15px red, 15px 5px black;
+        }
+        #head1{
+            /* text-shadow: 12px 13px 1px white; */
+            /* text-shadow: blue 12px 13px 4px; */
+            /* text-shadow: white 12px 13px; */
+            text-shadow: 12px 13px;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <img src="imgN.jpg">
+            <h1 id="head1">Welcome to nature</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur 
+                adipisicing elit. Tempore impedit laboriosam 
+                nihil. Maxime recusandae aliquam, ipsum eveniet 
+                corrupti consequatur quidem, ab suscipit doloremque 
+                quasi minima, corporis explicabo delectus hic vitae.</p>
+        </div>
+    </div>
+</body>
+</html>
